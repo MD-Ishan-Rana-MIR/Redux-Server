@@ -27,4 +27,13 @@ mongoose.connect(dbPort).then((res)=>{
 
 
 
+app.get("/",async(req,res)=>{
+  res.json({
+    status : "success",
+    msg : "Server run successfully"
+  })
+})
+
+
+
 module.exports = app
